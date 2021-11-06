@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: default
+  name: tech-search
+  labels:
+    app: tech-search
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tech-search
+  template:
+    metadata:
+      labels:
+        app: tech-search
+    spec:
+      containers:
+      - name: tech-search
+        image: hhssaaffii/tech-search:1
+        ports:
+        - containerPort: 8090
+

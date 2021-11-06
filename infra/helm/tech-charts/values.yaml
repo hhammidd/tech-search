@@ -1,0 +1,22 @@
+replicaCount: 1
+tag: 1
+namespace: default
+service:
+  type: NodePort
+  name: tech-search-svc-1
+
+ImageName: hhssaaffii/tech-search
+
+port: 8090
+
+fullName: tech-seach
+
+appName: tech-seach
+
+portNumber: 8090
+host: hello-world.pvt
+
+image: ##DOCKER_REGISTRY##/hhssaaffii/tech-search
+
+artifactory:
+  name: artifactory
